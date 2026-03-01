@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiveTrend - Your Ultimate Tracker</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta property="og:title" content="ActiveTrend - Your Ultimate Tracker">
+    <meta property="og:description" content="Join ActiveTrend to track your progress, build habits, and reach your goals. Sign up to get notified when we launch!">
+    <meta property="og:image" content="images/day/images_1.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-bolt"></i> ActiveTrend
+        </div>
+        <div class="controls">
+            <button id="langToggle" class="icon-btn">ES</button>
+            <button id="themeToggle" class="icon-btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero fade-in">
+            <div class="hero-content">
+                <h1 data-i18n="hero_title">Level up your daily activity.</h1>
+                <p data-i18n="hero_desc">Join ActiveTrend to track your progress, build habits, and reach your goals. Sign up to get notified when we launch!</p>
+                
+                <form id="subscribeForm" class="subscribe-form">
+                    <input type="email" id="emailInput" data-i18n-placeholder="email_placeholder" placeholder="Enter your email address" required>
+                    <button type="submit" data-i18n="subscribe_btn">Notify Me</button>
+                </form>
+            </div>
+            
+            <div class="hero-image">
+                <img src="images/day/images_1.png" data-img="images_1.png" alt="ActiveTrend App Screen" class="app-mockup theme-image">
+            </div>
+        </section>
+
+        <section class="features fade-in">
+            <h2 data-i18n="features_title">App Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="images/day/images_2.png" data-img="images_2.png" alt="Analytics" class="feature-img theme-image">
+                    <h3 data-i18n="feature_1_title">Detailed Analytics</h3>
+                    <p data-i18n="feature_1_desc">Track your steps, calories, and workouts with beautiful charts and insights.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="images/day/images_3.png" data-img="images_3.png" alt="Smart Goals" class="feature-img theme-image">
+                    <h3 data-i18n="feature_2_title">Smart Goals</h3>
+                    <p data-i18n="feature_2_desc">Set personalized daily targets and let our smart algorithm guide you.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="images/day/images_4.png" data-img="images_4.png" alt="Health Sync" class="feature-img theme-image">
+                    <h3 data-i18n="feature_3_title">Health Sync</h3>
+                    <p data-i18n="feature_3_desc">Seamlessly integrates with your device's native health apps and sensors.</p>
+                </div>
+                
+                <div class="feature-card horizontal-card">
+                    <img src="images/day/images_5.png" data-img="images_5.png" alt="Custom Tags" class="feature-img theme-image">
+                    <h3 data-i18n="feature_4_title">Custom Tags</h3>
+                    <p data-i18n="feature_4_desc">Categorize everything your way with flexible, color-coded custom tags.</p>
+                </div>
+                
+                <div class="more-features-cta">
+                    <h3 data-i18n="more_features_title">Want to see more?</h3>
+                    <p data-i18n="more_features_desc">There are tons of other amazing features waiting for you. Sign up to be the first to download the app and explore them all!</p>
+                    
+                    <form id="subscribeFormBottom" class="subscribe-form cta-form">
+                        <input type="email" id="emailInputBottom" data-i18n-placeholder="email_placeholder" placeholder="Enter your email address" required>
+                        <button type="submit" data-i18n="cta_button">Join the Waitlist</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-me fade-in">
+            <div class="about-image">
+                <img src="images/images_i.png" alt="Creator of ActiveTrend">
+            </div>
+            <div class="about-content">
+                <h2 data-i18n="about_title">Why I built ActiveTrend</h2>
+                <p data-i18n="about_desc_1">Hi! I'm the creator of this app. Just like many of you, I'm on my own personal journey to lose weight and improve my health.</p>
+                <p data-i18n="about_desc_2">I built ActiveTrend for myself because I couldn't find a tracker that fit my needs perfectly. I'd be absolutely thrilled if you join me so we can crush our health goals together!</p>
+                
+                <div class="about-socials">
+                    <p data-i18n="follow_me">Follow my journey:</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/sorlovfit/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@sorlovfit" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@sorlovfit" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.instagram.com/sorlovfit/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@sorlovfit" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@sorlovfit" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="policy-links">
+                <a href="#" data-i18n="privacy_policy">Privacy Policy</a>
+                <a href="#" data-i18n="terms">Terms of Service</a>
+                <a href="#" data-i18n="data_collection">Data Collection Policy</a>
+            </div>
+            <p class="copyright">&copy; 2026 ActiveTrend. <span data-i18n="rights">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <div id="legalModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2 id="modalTitle">Title</h2>
+            <div id="modalBody" class="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

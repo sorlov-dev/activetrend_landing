@@ -1,0 +1,612 @@
+/* Color Palette Variables */
+:root {
+    --bg-color: #F1F1F1;
+    --surface-color: #FFFFFF;
+    --primary-color: #619C8A;
+    --primary-variant: #417766;
+    --secondary-color: #9EBC7D;
+    --on-bg-color: #000000;
+    --on-surface-color: #000000;
+    --on-primary-color: #FFFFFF;
+    
+    --extra: #F9C847;
+    --accent-blue: #56B4E9;
+    --accent-red: #D9534F;
+    
+    --border-radius: 16px;
+    --transition-speed: 0.3s;
+}
+
+[data-theme="dark"] {
+    --bg-color: #212121;
+    --surface-color: #333333;
+    --primary-color: #C7D9CA;
+    --primary-variant: #A4C4B8;
+    --secondary-color: #A9BD99;
+    --on-bg-color: #FFFFFF;
+    --on-surface-color: #FFFFFF;
+    --on-primary-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--on-bg-color);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--surface-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: background-color var(--transition-speed);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    color: var(--on-surface-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.icon-btn:hover {
+    color: var(--primary-color);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 5%;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px 0 80px 0;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.app-mockup {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 35px; /* Looks like a phone screen */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border: 8px solid var(--surface-color);
+    transition: border-color var(--transition-speed);
+}
+
+/* Form */
+.subscribe-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.subscribe-form input {
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: 2px solid var(--surface-color);
+    background-color: var(--surface-color);
+    color: var(--on-surface-color);
+    font-size: 1rem;
+    flex: 1;
+    min-width: 200px;
+    outline: none;
+    transition: border-color var(--transition-speed);
+}
+
+.subscribe-form input:focus {
+    border-color: var(--primary-color);
+}
+
+.subscribe-form button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.subscribe-form button:hover {
+    background-color: var(--primary-variant);
+}
+
+.subscribe-form button:active {
+    transform: scale(0.98);
+}
+
+/* Features Section */
+.features {
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 60px;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+/* Обновленная сетка фичей */
+.features-grid {
+    display: grid;
+    /* По умолчанию 1 колонка для мобилок */
+    grid-template-columns: 1fr; 
+    gap: 30px;
+}
+
+/* Планшеты: 2 колонки */
+@media (min-width: 650px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .more-features-cta {
+        grid-column: span 2; /* Растягиваем блок на всю ширину */
+    }
+}
+
+/* Десктопы: 3 колонки */
+@media (min-width: 950px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .more-features-cta {
+        grid-column: span 2; /* Растягиваем ровно на оставшиеся 2 пустые колонки */
+    }
+}
+
+/* --- Стили для нового блока-призыва (CTA) --- */
+.more-features-cta {
+    background-color: var(--primary-color); /* Заливаем фирменным зеленым */
+    color: var(--on-primary-color);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: background-color var(--transition-speed);
+}
+
+.more-features-cta h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.more-features-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    line-height: 1.6;
+    max-width: 450px;
+}
+
+.cta-scroll-btn {
+    background-color: var(--surface-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: transform 0.2s, background-color 0.2s;
+    display: inline-block;
+}
+
+.cta-scroll-btn:hover {
+    transform: translateY(-3px);
+    background-color: var(--bg-color);
+}
+
+.feature-card {
+    background-color: var(--surface-color);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, background-color var(--transition-speed);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: 50% 0%; /* Начинаем показывать картинку с самого верха */
+    border-radius: 12px;
+    margin-bottom: 20px;
+    /* Запускаем бесконечную плавную анимацию на 12 секунд */
+    animation: floatImage 12s ease-in-out infinite; 
+}
+
+/* Сама магия анимации (плавание вверх-вниз) */
+@keyframes floatImage {
+    0% {
+        object-position: 50% 0%; /* Верхняя часть скрина */
+    }
+    50% {
+        object-position: 50% 100%; /* Плавно доезжаем до самого низа */
+    }
+    100% {
+        object-position: 50% 0%; /* Плавно возвращаемся наверх */
+    }
+}
+
+/* Смена картинок при переключении темы */
+.theme-image {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.feature-card p {
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background-color: var(--surface-color);
+    padding: 40px 5%;
+    text-align: center;
+    transition: background-color var(--transition-speed);
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: var(--on-surface-color);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+.policy-links {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.policy-links a {
+    color: var(--on-surface-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.policy-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .hero h1 { font-size: 2.5rem; }
+    
+    .subscribe-form { flex-direction: column; }
+    .subscribe-form button { width: 100%; }
+}
+
+/* --- Исключение для горизонтального скриншота (Фича 4) --- */
+.horizontal-card .feature-img {
+    object-fit: contain; /* Вписывает скриншот целиком, не обрезая его */
+    object-position: center; /* ВОТ ОНО! Возвращаем картинку строго по центру по вертикали и горизонтали */
+    padding: 30px 15px; /* Создает ту самую "подложку" вокруг скриншота */
+    
+    /* Мягкий градиент на основе твоих Primary и Secondary цветов с прозрачностью */
+    background: linear-gradient(135deg, rgba(97, 156, 138, 0.15) 0%, rgba(158, 188, 125, 0.15) 100%);
+    
+    /* Отключаем плавающую анимацию (если ты ее оставлял), тут она не нужна */
+    animation: none; 
+}
+
+/* Подложка для темной темы (чтобы не слепила) */
+[data-theme="dark"] .horizontal-card .feature-img {
+    background: linear-gradient(135deg, rgba(199, 217, 202, 0.05) 0%, rgba(169, 189, 153, 0.1) 100%);
+}
+
+/* --- Стили для формы в нижнем блоке (CTA) --- */
+.cta-form {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 550px; /* Ограничиваем ширину, чтобы форма не была гигантской */
+}
+
+/* Перекрашиваем кнопку, чтобы она выделялась на зеленом фоне */
+.cta-form button {
+    background-color: var(--surface-color);
+    color: var(--primary-color);
+}
+
+.cta-form button:hover {
+    background-color: var(--bg-color);
+}
+
+/* --- Стили для блока "Обо мне" --- */
+.about-me {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+    margin-bottom: 80px;
+    background-color: var(--surface-color);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: background-color var(--transition-speed);
+}
+
+.about-image {
+    flex: 1;
+    max-width: 350px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.about-content {
+    flex: 1.5;
+}
+
+.about-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+/* Мобильная адаптация для блока "Обо мне" */
+@media (max-width: 800px) {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .about-image {
+        max-width: 100%;
+    }
+}
+
+/* --- Стили для соцсетей в блоке "Обо мне" --- */
+.about-socials {
+    margin-top: 25px;
+}
+
+.about-socials p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--primary-color) !important;
+    opacity: 1 !important;
+}
+
+.about-socials .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.about-socials .social-icons a {
+    color: var(--surface-color);
+    background-color: var(--primary-color);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.about-socials .social-icons a:hover {
+    transform: translateY(-3px);
+    background-color: var(--primary-variant);
+}
+
+/* На мобилках выравниваем иконки по центру */
+@media (max-width: 800px) {
+    .about-socials .social-icons {
+        justify-content: center;
+    }
+}
+
+/* --- Стили для модального окна (Документы) --- */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    transition: opacity var(--transition-speed);
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: var(--surface-color);
+    color: var(--on-surface-color);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    max-width: 800px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto; /* Скролл внутри окна, если текст длинный */
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    transform: translateY(-20px);
+    transition: transform var(--transition-speed);
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2.5rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: var(--on-surface-color);
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    line-height: 1;
+}
+
+.close-modal:hover {
+    opacity: 1;
+    color: var(--primary-color);
+}
+
+#modalTitle {
+    margin-bottom: 20px;
+    padding-right: 40px;
+    color: var(--primary-color);
+}
+
+.modal-body {
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.modal-body h4 {
+    margin: 20px 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.modal-body p, .modal-body ul {
+    margin-bottom: 15px;
+    opacity: 0.85;
+}
+
+.modal-body ul {
+    padding-left: 20px;
+}
