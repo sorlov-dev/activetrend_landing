@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             about_desc_1:
                 "MyFitnessPal. YAZIO. Lose It. Lifesum. I tried them all. Each time I'd last two, maybe three weeks — then quietly stop opening the app. Not because I didn't want to lose weight. Because logging every meal felt like a part-time job I never signed up for.",
             about_desc_2:
-                "I'm a senior Android developer living in Buenos Aires. So instead of downloading another tracker, I built one with a single rule: if I skip a day of logging, the app failed — not me. 49 days later, I'm down 4.4 kg. I still open it every evening. That's never happened before.",
+                "I'm a senior Android developer living in Buenos Aires. So instead of downloading another tracker, I built one with a single rule: if I skip a day of logging, the app failed — not me. 49 days later, I'm down -9.8 kg. I still open it every evening. That's never happened before.",
             about_desc_3:
                 "This app is also a small tribute to Francesca de Lapa — my cat, who reminds me every day to be patient. She's in the app too. 🐱",
 
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
             about_desc_1:
                 "MyFitnessPal. YAZIO. Lose It. Lifesum. Las probé todas. Cada vez aguantaba dos, tal vez tres semanas — y después dejaba de abrir la app en silencio. No porque no quisiera adelgazar. Porque anotar cada comida parecía un trabajo a tiempo parcial al que jamás me anoté.",
             about_desc_2:
-                "Soy desarrollador senior de Android y vivo en Buenos Aires. En vez de bajar otro rastreador, armé uno con una sola regla: si me saltaba un día de registro, fallaba la app — yo no. Pasaron 49 días y llevo −4,4 kg. Todavía la abro todas las noches. Eso antes no me pasaba.",
+                "Soy desarrollador senior de Android y vivo en Buenos Aires. En vez de bajar otro rastreador, armé uno con una sola regla: si me saltaba un día de registro, fallaba la app — yo no. Pasaron 49 días y llevo −9,8 kg. Todavía la abro todas las noches. Eso antes no me pasaba.",
             about_desc_3:
                 "Esta app es también un pequeño tributo a Francesca de Lapa — mi gata, que cada día me recuerda tener paciencia. También está en la app. 🐱",
 
