@@ -87,15 +87,16 @@ document.addEventListener('DOMContentLoaded', () => {
             success_msg: "Welcome to the squad! We've sent a lightning bolt to your inbox.",
             
             // ОБНОВЛЕННЫЕ ТЕКСТЫ ДЛЯ ФИЧ (EN)
-            feature_1_title: "Effortless Tracking",
-            feature_1_desc: "No more weighing food or counting exact calories. Listen to your body: log if you overate, stayed balanced, or hit a deficit. Add custom tags and log activity in seconds.",
-            feature_2_title: "Clear Analytics",
-            feature_2_desc: "Visualize your journey easily. Beautiful, simple charts help you see your progress, understand your habits, and stay on track without overwhelming data.",
-            feature_3_title: "Smart Weight & BMI",
-            feature_3_desc: "Log your weight and watch your transformation unfold. Keep a close eye on your BMI and track your long-term success on detailed trend graphs.",
-            feature_4_title: "Streaks & AI Coaching",
-            feature_4_desc: "Build consistency and keep your streaks alive! Complete your daily logs to unlock personalized AI insights, smart recommendations, and the praise you deserve.",
-            
+            feature_1_title: "Two taps. Done.",
+            feature_1_desc:
+                "Pick your food state - Stuffed, Normal, or Deficit. Pick your activity - Lazy, Active, or Hyper. Add tags if you feel like it. That's your whole log for the day.",
+            feature_2_title: "See the pattern, not the noise",
+            feature_2_desc:
+                "Your food and activity trends over 7, 14, 21, or 28 days - in one view. No spreadsheets. No data overload. Just the honest picture of how your weeks actually look.",
+            feature_3_title: "Weight without obsession",
+            feature_3_desc:
+                "Log your weight when you feel like it. Watch how it moves alongside your food and activity habits over time. BMI included, no calculator needed.",
+
             more_features_title: "Want to see more?",
             more_features_desc: "Discover even more tools to crush your goals. Sign up to get the app as soon as it launches!",
             cta_button: "Join the Waitlist",
@@ -149,15 +150,16 @@ document.addEventListener('DOMContentLoaded', () => {
             success_msg: "¡Bienvenido al equipo! Hemos enviado un rayo a tu bandeja de entrada.",
             
             // ОБНОВЛЕННЫЕ ТЕКСТЫ ДЛЯ ФИЧ (ES)
-            feature_1_title: "Registro Sin Esfuerzo",
-            feature_1_desc: "No más pesar comida ni contar calorías exactas. Escucha a tu cuerpo: registra si comiste de más, normal o en déficit. Añade etiquetas y tu actividad en segundos.",
-            feature_2_title: "Análisis Claros",
-            feature_2_desc: "Visualiza tu viaje fácilmente. Gráficos hermosos y simples te ayudan a ver tu progreso, entender tus hábitos y mantenerte enfocado sin datos abrumadores.",
-            feature_3_title: "Peso e IMC Inteligente",
-            feature_3_desc: "Registra tu peso y observa tu transformación. Haz un seguimiento de tu IMC y mira tu éxito a largo plazo en gráficos de tendencias detallados.",
-            feature_4_title: "Rachas y Coach IA",
-            feature_4_desc: "¡Crea constancia y mantén tus rachas vivas! Completa tus registros para desbloquear consejos personalizados de IA, recomendaciones inteligentes y motivación.",
-            
+            feature_1_title: "Dos toques. Listo.",
+            feature_1_desc:
+                "Elige tu estado de comida — Lleno, Normal o Déficit. Elige tu actividad — Perezoso, Activo o Híper. Añade etiquetas si quieres. Eso es todo tu registro del día.",
+            feature_2_title: "Ve el patrón, no el ruido",
+            feature_2_desc:
+                "Tus tendencias de comida y actividad en 7, 14, 21 o 28 días — en una sola vista. Sin hojas de cálculo. Sin saturación de datos. Solo la imagen honesta de cómo se ven tus semanas de verdad.",
+            feature_3_title: "Peso sin obsesionarte",
+            feature_3_desc:
+                "Registra tu peso cuando quieras. Observa cómo evoluciona junto a tus hábitos de comida y actividad con el tiempo. IMC incluido, sin calculadora.",
+
             more_features_title: "¿Quieres ver más?",
             more_features_desc: "Descubre aún más herramientas para alcanzar tus metas. ¡Regístrate para obtener la app apenas se lance!",
             cta_button: "Unirse a la lista",
