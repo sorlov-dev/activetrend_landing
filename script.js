@@ -48,8 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const translations = {
         en: {
-            hero_title: "Level up your daily activity.",
-            hero_desc: "Join ActiveTrend to track your progress, build habits, and reach your goals. Sign up to get notified when we launch!",
+            hero_line1_before: "You already know when you ",
+            hero_line1_accent: "overate",
+            hero_line1_after: ".",
+            hero_line2: "You don't need math.",
+            hero_subtitle:
+                "ActiveTrend replaces calorie counting with a simple end-of-day check-in. Two taps. Honest trends. No obsessing.",
             email_placeholder: "Enter your email address",
             subscribe_btn: "Notify Me",
             features_title: "App Features",
@@ -81,8 +85,12 @@ document.addEventListener('DOMContentLoaded', () => {
             rights: "All rights reserved."
         },
         es: {
-            hero_title: "Mejora tu actividad diaria.",
-            hero_desc: "Únete a ActiveTrend para seguir tu progreso, crear hábitos y alcanzar tus metas. ¡Regístrate para saber cuándo lanzamos!",
+            hero_line1_before: "Ya sabes cuándo ",
+            hero_line1_accent: "comiste de más",
+            hero_line1_after: ".",
+            hero_line2: "No necesitas matemáticas.",
+            hero_subtitle:
+                "ActiveTrend reemplaza el conteo de calorías por un registro simple al final del día. Dos toques. Tendencias honestas. Sin obsesionarte.",
             email_placeholder: "Ingresa tu correo electrónico",
             subscribe_btn: "Notifícame",
             features_title: "Características de la App",

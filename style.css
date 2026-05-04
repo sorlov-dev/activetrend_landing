@@ -105,20 +105,35 @@ main {
 .hero-content {
     flex: 1;
     max-width: 600px;
+    color: var(--on-bg-color);
 }
 
-.hero h1 {
+.hero-headline {
     font-size: 3.5rem;
     margin-bottom: 20px;
-    color: var(--primary-color);
-    line-height: 1.1;
+    line-height: 1.15;
+    font-weight: 700;
 }
 
-.hero p {
+.hero-headline-line2 {
+    display: inline-block;
+    margin-top: 0.08em;
+}
+
+.hero-accent {
+    color: var(--primary-color);
+}
+
+.hero-subtitle {
     font-size: 1.2rem;
+    font-weight: 400;
     margin-bottom: 40px;
     line-height: 1.6;
-    opacity: 0.8;
+    opacity: 0.85;
+}
+
+.hero .subscribe-form {
+    margin-top: 0;
 }
 
 .hero-image {
@@ -385,7 +400,7 @@ footer {
         gap: 30px;
     }
     
-    .hero h1 { font-size: 2.5rem; }
+    .hero-headline { font-size: 2.5rem; }
     
     .subscribe-form { flex-direction: column; }
     .subscribe-form button { width: 100%; }
