@@ -96,6 +96,15 @@ document.addEventListener('DOMContentLoaded', () => {
             feature_3_title: "Weight without obsession",
             feature_3_desc:
                 "Log your weight when you feel like it. Watch how it moves alongside your food and activity habits over time. BMI included, no calculator needed.",
+            feature_4_title: "Streak → AI Insight",
+            feature_4_desc:
+                "Log every day for 7 days straight and unlock your AI Insight — a short read on what your week actually looked like and what to watch out for next.",
+            feature_5_title: "Two AI personalities",
+            feature_5_desc:
+                "Choose how your AI talks to you. Warm & supportive if you need a nudge. Direct & sarcastic if you need a reality check. Switch anytime in settings.",
+            feature_6_title: "Home screen widget",
+            feature_6_desc:
+                "Your streak and today's status live on your Android home screen. One tap opens the log. No excuses for forgetting.",
 
             more_features_title: "Want to see more?",
             more_features_desc: "Discover even more tools to crush your goals. Sign up to get the app as soon as it launches!",
@@ -159,6 +168,15 @@ document.addEventListener('DOMContentLoaded', () => {
             feature_3_title: "Peso sin obsesionarte",
             feature_3_desc:
                 "Registra tu peso cuando quieras. Observa cómo evoluciona junto a tus hábitos de comida y actividad con el tiempo. IMC incluido, sin calculadora.",
+            feature_4_title: "Racha → AI Insight",
+            feature_4_desc:
+                "Registra cada día durante 7 días seguidos y desbloquea tu AI Insight: una lectura breve sobre cómo fue tu semana en la realidad y qué conviene vigilar después.",
+            feature_5_title: "Dos personalidades de IA",
+            feature_5_desc:
+                "Elige cómo te habla la IA. Cálida y de apoyo si necesitas un empujón. Directa e irónica si necesitas un toque de realidad. Cambia cuando quieras en ajustes.",
+            feature_6_title: "Widget en la pantalla de inicio",
+            feature_6_desc:
+                "Tu racha y el estado de hoy en la pantalla de inicio de Android. Un toque abre el registro. Sin excusas por olvidar.",
 
             more_features_title: "¿Quieres ver más?",
             more_features_desc: "Descubre aún más herramientas para alcanzar tus metas. ¡Regístrate para obtener la app apenas se lance!",
