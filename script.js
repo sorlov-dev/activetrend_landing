@@ -109,11 +109,16 @@ document.addEventListener('DOMContentLoaded', () => {
             more_features_title: "Want to see more?",
             more_features_desc: "Discover even more tools to crush your goals. Sign up to get the app as soon as it launches!",
             cta_button: "Join the Waitlist",
-            
-            about_title: "Why I built ActiveTrend",
-            about_desc_1: "Hi! I'm the creator of this app. Just like many of you, I'm on my own personal journey to lose weight and improve my health.",
-            about_desc_2: "I built ActiveTrend for myself because I couldn't find a tracker that fit my needs perfectly. I'd be absolutely thrilled if you join me so we can crush our health goals together!",
+
             follow_me: "Follow my journey:",
+            about_title:
+                "I built this app because I quit every other one",
+            about_desc_1:
+                "MyFitnessPal. YAZIO. Lose It. Lifesum. I tried them all. Each time I'd last two, maybe three weeks — then quietly stop opening the app. Not because I didn't want to lose weight. Because logging every meal felt like a part-time job I never signed up for.",
+            about_desc_2:
+                "I'm a senior Android developer living in Buenos Aires. So instead of downloading another tracker, I built one with a single rule: if I skip a day of logging, the app failed — not me. 49 days later, I'm down 4.4 kg. I still open it every evening. That's never happened before.",
+            about_desc_3:
+                "This app is also a small tribute to Francesca de Lapa — my cat, who reminds me every day to be patient. She's in the app too. 🐱",
 
             privacy_policy: "Privacy Policy",
             terms: "Terms of Service",
@@ -181,12 +186,17 @@ document.addEventListener('DOMContentLoaded', () => {
             more_features_title: "¿Quieres ver más?",
             more_features_desc: "Descubre aún más herramientas para alcanzar tus metas. ¡Regístrate para obtener la app apenas se lance!",
             cta_button: "Unirse a la lista",
-            
-            about_title: "Por qué creé ActiveTrend",
-            about_desc_1: "¡Hola! Soy el creador de esta app. Al igual que muchos de ustedes, estoy en mi propio viaje personal para perder peso y mejorar mi salud.",
-            about_desc_2: "Construí ActiveTrend para mí porque no encontraba un rastreador que se adaptara perfectamente a mis necesidades. ¡Me encantaría que te unas a mí para que podamos alcanzar nuestras metas de salud juntos!",
+
             follow_me: "Sigue mi progreso:",
-            
+            about_title:
+                "Creé esta app porque dejé todas las demás",
+            about_desc_1:
+                "MyFitnessPal. YAZIO. Lose It. Lifesum. Las probé todas. Cada vez aguantaba dos, tal vez tres semanas — y después dejaba de abrir la app en silencio. No porque no quisiera adelgazar. Porque anotar cada comida parecía un trabajo a tiempo parcial al que jamás me anoté.",
+            about_desc_2:
+                "Soy desarrollador senior de Android y vivo en Buenos Aires. En vez de bajar otro rastreador, armé uno con una sola regla: si me saltaba un día de registro, fallaba la app — yo no. Pasaron 49 días y llevo −4,4 kg. Todavía la abro todas las noches. Eso antes no me pasaba.",
+            about_desc_3:
+                "Esta app es también un pequeño tributo a Francesca de Lapa — mi gata, que cada día me recuerda tener paciencia. También está en la app. 🐱",
+
             privacy_policy: "Política de Privacidad",
             terms: "Términos de Servicio",
             data_collection: "Política de Recopilación de Datos",
