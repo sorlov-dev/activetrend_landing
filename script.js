@@ -69,6 +69,19 @@ document.addEventListener('DOMContentLoaded', () => {
             story_pain_3: "You forget what you ate in the morning by evening",
             story_pain_4: "You stop logging when you overeat — exactly when data matters most",
             story_pain_5: "Precision gives false confidence. Your estimate is always off anyway.",
+            how_it_works_eyebrow: "How it works",
+            how_it_works_title: "Three things. Every day. That's the whole app.",
+            how_step_1_title: "Mark how you ate",
+            how_step_1_desc:
+                "Pick one of three states: Stuffed, Normal, or Deficit. That's it. Optionally add tags — Fast food, Sweet, Healthy food, whatever you actually ate — for more context later.",
+            how_step_2_title: "Mark how you moved",
+            how_step_2_desc:
+                "Pick one: Lazy, Active, or Hyper. Again, tags are optional — Cardio, Strength, Flexibility, Sick, Chill — use them when you want to remember why.",
+            how_step_3_title: "See what's actually going on",
+            how_step_3_desc:
+                "Do this for 7 days in a row — fill the streak — and unlock your AI Insight. A short, honest read of your week: what patterns are there, what to watch out for. You choose the tone: warm & supportive, or direct & a little sarcastic.",
+            how_step_3_mock:
+                "AI Insight: 5/7 deficit days — solid week. The other two entries share a suspicious overlap with Saturday night and your snack strategy.",
             features_title: "App Features",
 
             success_msg: "Welcome to the squad! We've sent a lightning bolt to your inbox.",
@@ -118,6 +131,19 @@ document.addEventListener('DOMContentLoaded', () => {
             story_pain_3: "A la tarde ya no recuerdas qué desayunaste por la mañana",
             story_pain_4: "Dejas de registrar cuando comes de más — justo cuando importan más los datos",
             story_pain_5: "La precisión da una confianza falsa. Tu estimación siempre se equivoca igual.",
+            how_it_works_eyebrow: "Cómo funciona",
+            how_it_works_title: "Tres cosas. Cada día. Esa es toda la app.",
+            how_step_1_title: "Registra cómo comiste",
+            how_step_1_desc:
+                "Elige uno de tres estados: Lleno, Normal o Déficit. Eso es todo. Opcionalmente añade etiquetas — comida rápida, dulce, comida saludable, lo que hayas comido de verdad — para tener más contexto después.",
+            how_step_2_title: "Registra cómo te moviste",
+            how_step_2_desc:
+                "Elige uno: Perezoso, Activo o Híper. Las etiquetas son opcionales — cardio, fuerza, flexibilidad, enfermo, relax — úsalas cuando quieras recordar por qué.",
+            how_step_3_title: "Mira qué está pasando en serio",
+            how_step_3_desc:
+                "Hazlo 7 días seguidos — completa la racha — y desbloquea tu AI Insight. Una lectura corta y honesta de tu semana: qué patrones hay y qué conviene vigilar. Tú eliges el tono: cálido y alentador, o directo y con un poco de ironía.",
+            how_step_3_mock:
+                "AI Insight: 5/7 días en déficit — buena racha. Los otros dos comparten un sospechoso solapamiento con el sábado por la noche y tu estrategia de snacks.",
             features_title: "Características de la App",
 
             success_msg: "¡Bienvenido al equipo! Hemos enviado un rayo a tu bandeja de entrada.",
