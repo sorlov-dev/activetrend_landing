@@ -15,6 +15,10 @@
     
     --border-radius: 16px;
     --transition-speed: 0.3s;
+
+    --header-download-bg: #000000;
+    --header-download-fg: #ffffff;
+    --header-download-hover-bg: #2d2d2d;
 }
 
 [data-theme="dark"] {
@@ -26,6 +30,10 @@
     --on-bg-color: #FFFFFF;
     --on-surface-color: #FFFFFF;
     --on-primary-color: #000000;
+
+    --header-download-bg: var(--primary-color);
+    --header-download-fg: var(--on-primary-color);
+    --header-download-hover-bg: var(--primary-variant);
 }
 
 * {
@@ -76,11 +84,50 @@ header {
     font-size: 1.2rem;
     cursor: pointer;
     font-weight: 600;
-    transition: color 0.2s;
+    transition: color 0.2s, background-color 0.2s;
+    padding: 8px 12px;
+    border-radius: 10px;
 }
 
 .icon-btn:hover {
     color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] .icon-btn:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.header-download-btn {
+    background-color: var(--header-download-bg);
+    color: var(--header-download-fg);
+    border: none;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: background-color 0.2s, transform 0.1s;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header-download-btn:hover {
+    background-color: var(--header-download-hover-bg);
+}
+
+.header-download-btn:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 640px) {
+    .header-download-btn {
+        display: none;
+    }
 }
 
 main {

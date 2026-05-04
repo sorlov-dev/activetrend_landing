@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 2. Language Toggle Logic (i18n) ---
     const langBtn = document.getElementById('langToggle');
+    const headerDownloadBtn = document.getElementById('headerDownloadBtn');
     
     const translations = {
         en: {
@@ -56,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "ActiveTrend replaces calorie counting with a simple end-of-day check-in. Two taps. Honest trends. No obsessing.",
             email_placeholder: "Enter your email address",
             subscribe_btn: "Notify Me",
+            download_btn: "Download",
             features_title: "App Features",
 
             success_msg: "Welcome to the squad! We've sent a lightning bolt to your inbox.",
@@ -93,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "ActiveTrend reemplaza el conteo de calorías por un registro simple al final del día. Dos toques. Tendencias honestas. Sin obsesionarte.",
             email_placeholder: "Ingresa tu correo electrónico",
             subscribe_btn: "Notifícame",
+            download_btn: "Descargar",
             features_title: "Características de la App",
 
             success_msg: "¡Bienvenido al equipo! Hemos enviado un rayo a tu bandeja de entrada.",
@@ -134,11 +137,23 @@ document.addEventListener('DOMContentLoaded', () => {
         applyTranslations(currentLang);
     });
 
+    // DEV: кнопка Download в шапке — пока заглушка: клик никуда не ведёт и ничего не открывает.
+    //      Подключи ссылку на стор, якорь к форме или модалку, когда будет готово.
+    if (headerDownloadBtn) {
+        headerDownloadBtn.addEventListener('click', () => {
+            /* intentionally empty */
+        });
+    }
+
     function applyTranslations(lang) {
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             element.textContent = translations[lang][key];
         });
+
+        if (headerDownloadBtn && translations[lang].download_btn) {
+            headerDownloadBtn.setAttribute('aria-label', translations[lang].download_btn);
+        }
         
         document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
             const key = element.getAttribute('data-i18n-placeholder');
