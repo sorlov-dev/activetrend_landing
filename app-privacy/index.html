@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Privacy Policy — ActiveTrend</title>
+    <meta name="description" content="Privacy policy for the ActiveTrend Android app: entries are stored only on your device, there is no account and no server, and exactly what the optional AI Insight feature sends to Google Vertex AI.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://activetrend.app/app-privacy/">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css?v=1.3">
+</head>
+<body>
+
+    <header>
+        <a href="/" class="logo">
+            <i class="fa-solid fa-bolt"></i> ActiveTrend
+        </a>
+        <div class="controls">
+            <button type="button" id="langToggle" class="icon-btn">ES</button>
+            <button type="button" id="themeToggle" class="icon-btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+
+    <main class="legal-main">
+        <section class="legal-header">
+            <h1 data-i18n="app_privacy">App Privacy Policy</h1>
+            <p class="legal-meta"><span data-i18n="last_updated">Last updated</span>: 13.09.2026</p>
+        </section>
+
+        <article class="legal-doc lang-block" data-lang="en">
+            <p>This policy covers the <strong>ActiveTrend Android application</strong>. The ActiveTrend website at activetrend.app is covered by a separate <a href="/privacy/">website Privacy Policy</a>, which deals with the waitlist form and the services that host the site.</p>
+
+            <h2>1. Who is responsible</h2>
+            <p>Sergei Orlov, sole proprietor (monotributista), Buenos Aires, Argentina.<br>
+            Email: <a href="mailto:contact@orlovs.dev">contact@orlovs.dev</a></p>
+
+            <h2>2. Where your data is stored</h2>
+            <p>Everything you log in the app — your daily food and activity statuses, your tags, your notes, your weight and your BMI — is stored in a local database on your device, and nowhere else.</p>
+            <p>The app has no account, no login, no user ID, no cloud sync, and no backend server operated by the developer. Your entries are never uploaded to us, because there is nothing to upload them to.</p>
+            <p>Uninstalling the app deletes this data.</p>
+
+            <h2>3. AI Insight</h2>
+            <p>AI Insight is optional. You give explicit consent before it is used for the first time, and you can turn the cloud feature off in settings at any time. With it off, the app generates a fully offline local summary instead, and nothing leaves your device.</p>
+            <p>When the feature is enabled, data is sent from your device to <strong>Google Vertex AI</strong> through <strong>Firebase AI Logic</strong>, using the model <code>gemini-2.5-flash-lite</code>. There is no developer-operated proxy in between: the request goes from your phone to Google.</p>
+
+            <h3>3.1 What is sent</h3>
+            <ul>
+                <li>your device locale;</li>
+                <li>your gender, as selected in the app profile;</li>
+                <li>aggregate counters for the prior 3 weeks: the number of days per food status, the number of days per activity status, and counts of healthy and unhealthy tag usage — without dates;</li>
+                <li>the last 7 days in detail: food status, activity status, and the tag names for each day. Tag names are free text that you create yourself, so whatever you typed is sent verbatim;</li>
+                <li>your weight and BMI measurements from the last 28 days, each with its date.</li>
+            </ul>
+
+            <p class="legal-callout">The data described above includes health-related information about you: your weight, your BMI, and your food and activity patterns.</p>
+
+            <h3>3.2 What is not sent</h3>
+            <ul>
+                <li>the free-text daily note;</li>
+                <li>your name or email address;</li>
+                <li>any account or device identifier.</li>
+            </ul>
+            <p>Transport-level identifiers added by the Firebase SDK itself are outside the app's payload.</p>
+
+            <h3>3.3 What the developer can see</h3>
+            <p>The developer does not operate a server and does not log, store, or have access to the content of these requests or to the model's responses. The only thing the app keeps is a local timestamp of your last insight, stored on your device and used to enforce the cooldown between insights.</p>
+
+            <h2>4. Third-party services in the app</h2>
+            <ul>
+                <li><strong>Firebase Analytics</strong> — app usage events only: onboarding, daily save, paywall. It does not receive AI Insight content and does not receive the content of your entries. Ad personalization signals are explicitly disabled. No advertising SDK of any kind is present in the app.</li>
+                <li><strong>Firebase Crashlytics</strong> — crash and error reports, with short technical messages.</li>
+                <li><strong>RevenueCat</strong> — subscription and purchase handling.</li>
+                <li><strong>Google Vertex AI via Firebase AI Logic</strong> — only for the AI Insight feature described in section 3, and only when you have enabled it.</li>
+            </ul>
+
+            <h2>5. Your rights</h2>
+            <p>Because there is no account and no server, the developer <strong>cannot look up, export or delete an individual user's entries</strong>. They exist only on your device. You remove them by clearing the app's data or by uninstalling the app.</p>
+            <p>You can withdraw your consent to AI Insight at any time in the app's settings. After that, insights are generated locally and nothing is sent.</p>
+            <p>Argentine Law 25.326 on the protection of personal data applies to this processing. For users in the European Union, the GDPR applies as well. The legal basis for sending your data to Google Vertex AI for AI Insight is your explicit consent.</p>
+            <p>For any privacy question, write to <a href="mailto:contact@orlovs.dev">contact@orlovs.dev</a>.</p>
+
+            <h2>6. Children</h2>
+            <p>The app is not directed to children under 13.</p>
+        </article>
+
+        <article class="legal-doc lang-block" data-lang="es" hidden>
+            <p>Esta política cubre la <strong>aplicación ActiveTrend para Android</strong>. El sitio web ActiveTrend en activetrend.app está cubierto por una <a href="/privacy/">Política de Privacidad del sitio</a> aparte, que trata el formulario de la lista de espera y los servicios que alojan el sitio.</p>
+
+            <h2>1. Responsable</h2>
+            <p>Sergei Orlov, emprendedor independiente (monotributista), Buenos Aires, Argentina.<br>
+            Email: <a href="mailto:contact@orlovs.dev">contact@orlovs.dev</a></p>
+
+            <h2>2. Dónde se guardan sus datos</h2>
+            <p>Todo lo que registra en la app — sus estados diarios de comida y actividad, sus etiquetas, sus notas, su peso y su IMC — se guarda en una base de datos local en su dispositivo, y en ningún otro lugar.</p>
+            <p>La app no tiene cuenta, ni inicio de sesión, ni identificador de usuario, ni sincronización en la nube, ni servidor propio operado por el desarrollador. Sus registros nunca se suben a nosotros, porque no hay adónde subirlos.</p>
+            <p>Al desinstalar la app, estos datos se eliminan.</p>
+
+            <h2>3. AI Insight</h2>
+            <p>AI Insight es opcional. Usted da su consentimiento explícito antes del primer uso, y puede desactivar la función en la nube en los ajustes en cualquier momento. Con la función desactivada, la app genera en su lugar un resumen local completamente sin conexión, y nada sale de su dispositivo.</p>
+            <p>Cuando la función está activada, los datos se envían desde su dispositivo a <strong>Google Vertex AI</strong> a través de <strong>Firebase AI Logic</strong>, usando el modelo <code>gemini-2.5-flash-lite</code>. No hay ningún proxy operado por el desarrollador en el medio: la solicitud va desde su teléfono a Google.</p>
+
+            <h3>3.1 Qué se envía</h3>
+            <ul>
+                <li>la configuración regional (locale) de su dispositivo;</li>
+                <li>su género, según lo seleccionado en el perfil de la app;</li>
+                <li>contadores agregados de las 3 semanas anteriores: la cantidad de días por estado de comida, la cantidad de días por estado de actividad, y el conteo de uso de etiquetas saludables y no saludables — sin fechas;</li>
+                <li>los últimos 7 días en detalle: estado de comida, estado de actividad y los nombres de las etiquetas de cada día. Los nombres de las etiquetas son texto libre que usted mismo crea, así que se envía literalmente lo que usted escribió;</li>
+                <li>sus mediciones de peso e IMC de los últimos 28 días, cada una con su fecha.</li>
+            </ul>
+
+            <p class="legal-callout">Los datos descritos arriba incluyen información relacionada con su salud: su peso, su IMC y sus patrones de comida y actividad.</p>
+
+            <h3>3.2 Qué no se envía</h3>
+            <ul>
+                <li>la nota diaria de texto libre;</li>
+                <li>su nombre ni su correo electrónico;</li>
+                <li>ningún identificador de cuenta ni de dispositivo.</li>
+            </ul>
+            <p>Los identificadores a nivel de transporte que agrega el propio SDK de Firebase quedan fuera del contenido que envía la app.</p>
+
+            <h3>3.3 Qué puede ver el desarrollador</h3>
+            <p>El desarrollador no opera ningún servidor y no registra, almacena ni tiene acceso al contenido de estas solicitudes ni a las respuestas del modelo. Lo único que conserva la app es una marca de tiempo local de su último insight, guardada en su dispositivo y usada para aplicar el tiempo de espera entre insights.</p>
+
+            <h2>4. Servicios de terceros en la app</h2>
+            <ul>
+                <li><strong>Firebase Analytics</strong> — únicamente eventos de uso de la app: onboarding, guardado diario, paywall. No recibe el contenido de AI Insight ni el contenido de sus registros. Las señales de personalización publicitaria están explícitamente desactivadas. La app no incluye ningún SDK publicitario de ningún tipo.</li>
+                <li><strong>Firebase Crashlytics</strong> — informes de fallos y errores, con mensajes técnicos breves.</li>
+                <li><strong>RevenueCat</strong> — gestión de suscripciones y compras.</li>
+                <li><strong>Google Vertex AI a través de Firebase AI Logic</strong> — solo para la función AI Insight descrita en la sección 3, y solo cuando usted la haya activado.</li>
+            </ul>
+
+            <h2>5. Sus derechos</h2>
+            <p>Como no hay cuenta ni servidor, el desarrollador <strong>no puede consultar, exportar ni eliminar los registros de un usuario concreto</strong>. Existen únicamente en su dispositivo. Usted los elimina borrando los datos de la app o desinstalándola.</p>
+            <p>Puede retirar su consentimiento a AI Insight en cualquier momento en los ajustes de la app. A partir de ese momento, los insights se generan localmente y no se envía nada.</p>
+            <p>A este tratamiento se aplica la Ley 25.326 de Protección de los Datos Personales de Argentina. Para los usuarios de la Unión Europea, también se aplica el RGPD. La base legal para enviar sus datos a Google Vertex AI para AI Insight es su consentimiento explícito.</p>
+            <p>Para cualquier consulta sobre privacidad, escriba a <a href="mailto:contact@orlovs.dev">contact@orlovs.dev</a>.</p>
+
+            <h2>6. Menores</h2>
+            <p>La app no está dirigida a menores de 13 años.</p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.instagram.com/sorlovfit/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@sorlovfit" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@sorlovfit" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="policy-links">
+                <a href="/" data-i18n="nav_home">Home</a>
+                <a href="/privacy/" data-i18n="privacy_policy">Privacy Policy</a>
+                <a href="/app-privacy/" data-i18n="app_privacy">App Privacy Policy</a>
+                <a href="/terms/" data-i18n="terms">Terms of Service</a>
+            </div>
+            <p class="copyright">&copy; 2026 ActiveTrend. <span data-i18n="rights">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="/script.js?v=1.3"></script>
+</body>
+</html>

@@ -125,6 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             nav_home: "Home",
             privacy_policy: "Privacy Policy",
+            app_privacy: "App Privacy Policy",
+            app_privacy_note: "Your entries stay on your device. What the app sends when you use AI Insight is listed in full here: ",
             terms: "Terms of Service",
             last_updated: "Last updated",
             rights: "All rights reserved."
@@ -206,6 +208,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             nav_home: "Inicio",
             privacy_policy: "Política de Privacidad",
+            app_privacy: "Política de Privacidad de la App",
+            app_privacy_note: "Tus registros se quedan en tu dispositivo. Lo que la app envía cuando usas AI Insight está detallado aquí: ",
             terms: "Términos de Servicio",
             last_updated: "Última actualización",
             rights: "Todos los derechos reservados."

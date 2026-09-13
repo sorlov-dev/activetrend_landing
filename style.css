@@ -891,7 +891,21 @@ footer {
     opacity: 0.85;
 }
 
-/* --- Юридические страницы (/privacy/, /terms/) --- */
+.features-privacy-note {
+    margin: 30px auto 0 auto;
+    max-width: 640px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.7;
+}
+
+.features-privacy-note a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* --- Юридические страницы (/privacy/, /terms/, /app-privacy/) --- */
 .legal-main {
     align-items: center;
 }
@@ -936,9 +950,33 @@ footer {
     margin-top: 0;
 }
 
+.legal-doc h3 {
+    font-size: 1.05rem;
+    margin: 22px 0 10px 0;
+}
+
 .legal-doc p {
     margin-bottom: 15px;
     opacity: 0.85;
+}
+
+.legal-doc ul {
+    margin: 0 0 15px 0;
+    padding-left: 22px;
+    opacity: 0.85;
+}
+
+.legal-doc li {
+    margin-bottom: 8px;
+}
+
+.legal-callout {
+    border-left: 3px solid var(--primary-color);
+    background-color: var(--bg-color);
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+    font-weight: 600;
+    opacity: 1 !important;
 }
 
 .legal-doc a {
