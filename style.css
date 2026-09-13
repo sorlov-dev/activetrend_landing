@@ -91,6 +91,30 @@ header {
     text-decoration: none;
 }
 
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--on-surface-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    opacity: 0.7;
+    transition: opacity 0.2s, color 0.2s;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    color: var(--primary-color);
+}
+
+.nav-links a.active {
+    opacity: 1;
+    color: var(--primary-color);
+}
+
 .controls {
     display: flex;
     gap: 15px;
@@ -948,6 +972,104 @@ footer {
 .legal-meta {
     font-size: 0.9rem;
     opacity: 0.6;
+}
+
+.page-lead {
+    max-width: 60ch;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+/* --- Страница контактов (/contact/) --- */
+.contact-section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.contact-section-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    margin-bottom: 18px;
+}
+
+.contact-card,
+.reason-card,
+.contact-details-card {
+    background-color: var(--surface-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 30px;
+    transition: background-color var(--transition-speed);
+}
+
+.contact-card {
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.contact-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.6;
+}
+
+.contact-email {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 10px 0;
+    word-break: break-word;
+}
+
+.contact-email a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.contact-email a:hover {
+    text-decoration: underline;
+}
+
+.contact-note {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.7;
+}
+
+.reason-grid {
+    display: grid;
+    gap: 20px;
+}
+
+@media (min-width: 700px) {
+    .reason-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.reason-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+
+.reason-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.legal-info-block {
+    margin: 0;
+    max-width: none;
+    text-align: left;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
 .legal-doc {
