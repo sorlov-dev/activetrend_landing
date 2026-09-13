@@ -10,7 +10,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/style.css?v=1.3">
+    <link rel="stylesheet" href="/style.css?v=1.4">
 </head>
 <body>
 
@@ -39,7 +39,8 @@
 
             <h2>2. Where your data is stored</h2>
             <p>Everything you log in the app — your daily food and activity statuses, your tags, your notes, your weight and your BMI — is stored in a local database on your device, and nowhere else.</p>
-            <p>The app has no account, no login, no user ID, no cloud sync, and no backend server operated by the developer. Your entries are never uploaded to us, because there is nothing to upload them to.</p>
+            <p>The app has no account and no login that you create. The developer operates no server and no cloud sync of your entries, so your entries are never uploaded to us — there is nothing to upload them to.</p>
+            <p>The SDKs listed in section 4 do generate their own identifiers: <strong>RevenueCat</strong> assigns an anonymous app user ID, and <strong>Firebase</strong> assigns an app instance ID. Neither is linked to a name or an email address.</p>
             <p>Uninstalling the app deletes this data.</p>
 
             <h2>3. AI Insight</h2>
@@ -72,7 +73,7 @@
             <ul>
                 <li><strong>Firebase Analytics</strong> — app usage events only: onboarding, daily save, paywall. It does not receive AI Insight content and does not receive the content of your entries. Ad personalization signals are explicitly disabled. No advertising SDK of any kind is present in the app.</li>
                 <li><strong>Firebase Crashlytics</strong> — crash and error reports, with short technical messages.</li>
-                <li><strong>RevenueCat</strong> — subscription and purchase handling.</li>
+                <li><strong>RevenueCat</strong> — subscriptions and in-app purchases. It processes your purchase history and the anonymous app user ID associated with the purchase. No food, activity, weight or BMI data is sent to RevenueCat.</li>
                 <li><strong>Google Vertex AI via Firebase AI Logic</strong> — only for the AI Insight feature described in section 3, and only when you have enabled it.</li>
             </ul>
 
@@ -95,7 +96,8 @@
 
             <h2>2. Dónde se guardan sus datos</h2>
             <p>Todo lo que registra en la app — sus estados diarios de comida y actividad, sus etiquetas, sus notas, su peso y su IMC — se guarda en una base de datos local en su dispositivo, y en ningún otro lugar.</p>
-            <p>La app no tiene cuenta, ni inicio de sesión, ni identificador de usuario, ni sincronización en la nube, ni servidor propio operado por el desarrollador. Sus registros nunca se suben a nosotros, porque no hay adónde subirlos.</p>
+            <p>La app no tiene cuenta ni inicio de sesión que usted cree. El desarrollador no opera ningún servidor ni ninguna sincronización en la nube de sus registros, así que sus registros nunca se suben a nosotros: no hay adónde subirlos.</p>
+            <p>Los SDK enumerados en la sección 4 sí generan sus propios identificadores: <strong>RevenueCat</strong> asigna un ID de usuario anónimo de la app, y <strong>Firebase</strong> asigna un ID de instancia de la app. Ninguno está vinculado a un nombre ni a una dirección de correo electrónico.</p>
             <p>Al desinstalar la app, estos datos se eliminan.</p>
 
             <h2>3. AI Insight</h2>
@@ -128,7 +130,7 @@
             <ul>
                 <li><strong>Firebase Analytics</strong> — únicamente eventos de uso de la app: onboarding, guardado diario, paywall. No recibe el contenido de AI Insight ni el contenido de sus registros. Las señales de personalización publicitaria están explícitamente desactivadas. La app no incluye ningún SDK publicitario de ningún tipo.</li>
                 <li><strong>Firebase Crashlytics</strong> — informes de fallos y errores, con mensajes técnicos breves.</li>
-                <li><strong>RevenueCat</strong> — gestión de suscripciones y compras.</li>
+                <li><strong>RevenueCat</strong> — suscripciones y compras dentro de la app. Procesa su historial de compras y el ID de usuario anónimo de la app asociado a la compra. No se envía a RevenueCat ningún dato de comida, actividad, peso ni IMC.</li>
                 <li><strong>Google Vertex AI a través de Firebase AI Logic</strong> — solo para la función AI Insight descrita en la sección 3, y solo cuando usted la haya activado.</li>
             </ul>
 
@@ -156,10 +158,18 @@
                 <a href="/app-privacy/" data-i18n="app_privacy">App Privacy Policy</a>
                 <a href="/terms/" data-i18n="terms">Terms of Service</a>
             </div>
+            <div class="legal-info">
+                <p class="legal-name">OSV Labs</p>
+                <p><span data-i18n="legal_operated">Operated by</span> ORLOV, SERGEI</p>
+                <p>Avenida Santa Fe 3681, Piso 16, Departamento G, C1425BGL, Ciudad Autonoma de Buenos Aires, Argentina</p>
+                <p>CUIT: 20-96481946-8</p>
+                <p><span data-i18n="legal_email">Email</span>: <!--email_off--><a href="mailto:contact@orlovs.dev">contact@orlovs.dev</a><!--/email_off--></p>
+                <p><span data-i18n="legal_phone">Phone</span>: <a href="tel:+5491176039734">+54 9 11 7603-9734</a></p>
+            </div>
             <p class="copyright">&copy; 2026 ActiveTrend. <span data-i18n="rights">All rights reserved.</span></p>
         </div>
     </footer>
 
-    <script src="/script.js?v=1.3"></script>
+    <script src="/script.js?v=1.4"></script>
 </body>
 </html>
