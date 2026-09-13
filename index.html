@@ -12,7 +12,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="style.css?v=1.2">
 </head>
 <body>
 
@@ -44,6 +44,9 @@
                 <form id="subscribeForm" class="subscribe-form">
                     <input type="email" id="emailInput" data-i18n-placeholder="email_placeholder" placeholder="Enter your email address" required>
                     <button type="submit" data-i18n="subscribe_btn">Notify Me</button>
+                    <p class="form-consent">
+                        <span data-i18n="consent_before">We send your email to Brevo to store it on the waitlist and tell you when we launch. Nothing else. See the </span><a href="/privacy/" data-i18n="privacy_policy">Privacy Policy</a><span data-i18n="consent_after">.</span>
+                    </p>
                 </form>
             </div>
             
@@ -165,6 +168,9 @@
                     <form id="subscribeFormBottom" class="subscribe-form cta-form">
                         <input type="email" id="emailInputBottom" data-i18n-placeholder="email_placeholder" placeholder="Enter your email address" required>
                         <button type="submit" data-i18n="cta_button">Join the Waitlist</button>
+                        <p class="form-consent">
+                            <span data-i18n="consent_before">We send your email to Brevo to store it on the waitlist and tell you when we launch. Nothing else. See the </span><a href="/privacy/" data-i18n="privacy_policy">Privacy Policy</a><span data-i18n="consent_after">.</span>
+                        </p>
                     </form>
                 </div>
             </div>
@@ -200,22 +206,13 @@
                 <a href="https://www.youtube.com/@sorlovfit" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
             </div>
             <div class="policy-links">
-                <a href="#" data-i18n="privacy_policy">Privacy Policy</a>
-                <a href="#" data-i18n="terms">Terms of Service</a>
-                <a href="#" data-i18n="data_collection">Data Collection Policy</a>
+                <a href="/privacy/" data-i18n="privacy_policy">Privacy Policy</a>
+                <a href="/terms/" data-i18n="terms">Terms of Service</a>
             </div>
             <p class="copyright">&copy; 2026 ActiveTrend. <span data-i18n="rights">All rights reserved.</span></p>
         </div>
     </footer>
 
-    <div id="legalModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal" id="closeModal">&times;</span>
-            <h2 id="modalTitle">Title</h2>
-            <div id="modalBody" class="modal-body"></div>
-        </div>
-    </div>
-
-    <script src="script.js?v=1.1"></script>
+    <script src="script.js?v=1.2"></script>
 </body>
 </html>
